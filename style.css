@@ -3,9 +3,11 @@
 	src:url(https://cdn.jsdelivr.net/gh/imyolen/blog@1.0/font/webmo.woff2)
 }
 body {
-  background: #f6f7fb;
+  background-image: url(https://ae01.alicdn.com/kf/H4d486047ca314671a942ebb7dc95f702B.jpg)  !important;
+  background-size: cover;
   font-family:oswald!important;
 }
+
 
 a {
   color: #0073aa;
@@ -970,7 +972,8 @@ form#loginform p {
     background: #fff;
     border-radius: 10px;
     height: 500px;
-    box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+    /*box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);*/
+    box-shadow: 0 10px 13px rgba(31,45,61,.1), 0 0 1px rgba(31,45,61,.1);
     padding: 0;
     position: absolute;
     left: 50%;
@@ -1240,6 +1243,24 @@ body.auto-fold .edit-post-layout__content {
 }
 .form-field textarea:hover,
 .form-field textarea:focus {
+    background:#fff;
+	border-color:#20a0ff;
+	-webkit-box-shadow:0 0 0 3px rgba(32,160,255,.2)!important;
+	box-shadow:0 0 0 3px rgba(32,160,255,.2)!important;
+	-webkit-transition:.25s;
+	transition:.25s
+}
+#user_login.input:hover,
+#user_login.input:focus {
+    background:#fff;
+	border-color:#20a0ff;
+	-webkit-box-shadow:0 0 0 3px rgba(32,160,255,.2)!important;
+	box-shadow:0 0 0 3px rgba(32,160,255,.2)!important;
+	-webkit-transition:.25s;
+	transition:.25s
+}
+#user_pass.input:hover,
+#user_pass.input:focus {
     background:#fff;
 	border-color:#20a0ff;
 	-webkit-box-shadow:0 0 0 3px rgba(32,160,255,.2)!important;
