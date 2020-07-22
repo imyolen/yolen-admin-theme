@@ -1,11 +1,6 @@
-@font-face {
-	font-family:oswald;
-	src:url(https://cdn.jsdelivr.net/gh/imyolen/blog@1.0/font/webmo.woff2)
-}
 body {
   background: #f7f8fb !important;
   background-size: cover;
-  font-family:oswald!important;
 }
 
 
