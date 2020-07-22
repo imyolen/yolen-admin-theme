@@ -3,7 +3,7 @@
 	src:url(https://cdn.jsdelivr.net/gh/imyolen/blog@1.0/font/webmo.woff2)
 }
 body {
-  background-image: url(https://ae01.alicdn.com/kf/H4d486047ca314671a942ebb7dc95f702B.jpg)  !important;
+  background: #f7f8fb !important;
   background-size: cover;
   font-family:oswald!important;
 }
