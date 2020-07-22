@@ -1,7 +1,11 @@
+@font-face {
+	font-family:oswald;
+	src:url(https://cdn.jsdelivr.net/gh/imyolen/blog@1.0/font/webmo.woff2)
+}
 body {
   background: #f6f7fb;
+  font-family:oswald!important;
 }
-
 
 a {
   color: #0073aa;
