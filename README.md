@@ -11,10 +11,10 @@ WordPress后台直接上传安装，或使用ftp工具上传至`wp-content/plugi
 
 ## 预览
 后台登陆
-![Image text](https://yanxuan.nosdn.127.net/1e78825b2e676a3cd2bb2e042c30fecb.jpg)
+![Image text](images/Background-management-preview.jpg)
 
 管理界面
-![Image text](https://yanxuan.nosdn.127.net/dfa1a2cded5b3930f356c6ae637f4bbc.jpg)
+![Image text](images/Background-management-preview.jpg)
 
 ## 其它
 更多细节等你去体会。
