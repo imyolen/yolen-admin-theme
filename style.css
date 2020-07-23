@@ -1043,14 +1043,6 @@ html.wp-toolbar {
 	-webkit-transition:.25s;
 	transition:.25s
 }
-#title:hover,#title:focus {
-	background:#fff;
-	border-color:#20a0ff;
-	-webkit-box-shadow:0 0 0 3px rgba(32,160,255,.2)!important;
-	box-shadow:0 0 0 3px rgba(32,160,255,.2)!important;
-	-webkit-transition:.25s;
-	transition:.25s
-}
 #wp-filter-search-input.wp-filter-search:hover,#wp-filter-search-input.wp-filter-search:focus {
 	background:#fff;
 	border-color:#20a0ff;
