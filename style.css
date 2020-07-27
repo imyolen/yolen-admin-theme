@@ -2,7 +2,7 @@
 * @name：style
 * @description：主要样式
 * @author：yolen(im@yolen.cn)
-* @updated：2020-7-23 13:10:57
+* @updated：2020-7-27 23:36:54
 */
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap");
 	* {
@@ -12,10 +12,47 @@
 	-ms-user-select:none;
 	user-select:none;
 }
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image:linear-gradient(-60deg, #20b8ff 50%, #20a1ff 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+.bg3 {
+    animation-duration: 5s;
+}
+#login {
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: .25em;
+    box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+    position: fixed;
+    transform: translate(-50%, -50%);
+}
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
+}
 body {
-	background:#fff !important;
-	background-size:cover;
-	font-family:Nunito, 微软雅黑, "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-image:url('./images/background.jpg') !important;
+    /*background-repeat: repeat;*/
+    /*background-size:cover;*/
+    font-family:Nunito, 微软雅黑, "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 a {
 	color:#0073aa
@@ -467,7 +504,9 @@ html.wp-toolbar {
 li#wp-admin-bar-custom_menu {
 	width:240px;
 	background:#28374a !important;
-	background-image:url(./images/here_logo.png) !important
+	background-image:url(./images/here_logo.png) !important;
+	background-size: auto 50px;
+	
 }
 #wpadminbar:not(.mobile) .ab-top-menu > li#wp-admin-bar-custom_menu:hover > .ab-item,#wpadminbar:not(.mobile) .ab-top-menu > li#wp-admin-bar-custom_menu > .ab-item:focus,#wpadminbar.nojq .quicklinks .ab-top-menu > li#wp-admin-bar-custom_menu > .ab-item:focus,#wpadminbar.nojs .ab-top-menu > li#wp-admin-bar-custom_menu.menupop:hover > .ab-item,#wpadminbar .ab-top-menu > li#wp-admin-bar-custom_menu.menupop.hover > .ab-item {
 	background:#28374a !important;
@@ -740,17 +779,16 @@ form#loginform p {
 	transform:translate(-50%,-50%);
 	background-image:none,url(./images/login_bg.png);
 	background-repeat:no-repeat;
-	transition:0.5s
+	transition:0.5s;
 }
 @media screen and (max-height:550px) {
 	#login {
 	padding:0
 }
 }.login h1 a {
-	background-image:none,url(./images/login_logo.png);
+	background-image:none,url(./images/admin.svg);
 	background-size:70%;
 	background-repeat:no-repeat;
-	background-position:left;
 	color:#444;
 	height:50px;
 	font-size:20px;
@@ -762,7 +800,8 @@ form#loginform p {
 	text-indent:-9999px;
 	outline:0;
 	overflow:hidden;
-	display:block
+	display:block;
+	background-size: auto 50px;
 }
 .login h1 {
 	width:280px;
@@ -775,7 +814,7 @@ form#loginform p {
 	font-weight:400;
 	overflow:hidden;
 	box-shadow:none;
-	width:280px;
+	width:340px;
 	position:relative;
 	top:40px;
 	padding:0 30px;
@@ -806,7 +845,7 @@ form#loginform input#wp-submit {
 	position:relative;
 	top:-82px;
 	font-size:12px;
-	width:280px;
+	width:340px;
 	padding:0 30px;
 	text-align:right
 }
@@ -819,8 +858,8 @@ form#loginform input#wp-submit {
 	font-size:13px;
 	padding:0 15px;
 	position:relative;
-	top:30px;
-	width:280px;
+	top:5px;
+	width:340px;
 	text-align:center;
 	margin:0
 }
@@ -869,7 +908,7 @@ input#user_pass:focus {
 	#login {
 	width:340px;
 	transition:0.5s;
-	background-image:none,url(./images/login_bg_m.png)
+	background-image:none,url(./images/here_logo_m.png)
 }
 }@media only screen and (max-width:960px) {
 	.auto-fold #wpcontent,.auto-fold #wpfooter {
@@ -1690,10 +1729,14 @@ html.wp-toolbar {
     color: #fff;
     background:-webkit-gradient(linear,left top,right top,from(#20a0ff),to(#20b8ff));
 	background:-webkit-linear-gradient(left,#20a0ff,#20b8ff);
-	background:linear-gradient(90deg,#20a0ff,#20b8ff)
+	background:linear-gradient(90deg,#20a0ff,#20b8ff);
+	border-bottom-right-radius:3px;
+    border-bottom-left-radius:3px;
 }
 #show-settings-link.button.show-settings::after {
-    color: #fff
+    color: #fff;
+    border-bottom-right-radius:3px;
+    border-bottom-left-radius:3px
 }
 #doaction2.button.action {
     color: #fff;
@@ -1759,4 +1802,43 @@ html.wp-toolbar {
 }
 #activity-widget #latest-comments #the-comment-list.comment-item {
     background: #fff;
+}
+#delete_all.button.apply {
+    color: #fff;
+    background:-webkit-gradient(linear,left top,right top,from(#20a0ff),to(#20b8ff));
+	background:-webkit-linear-gradient(left,#20a0ff,#20b8ff);
+	background:linear-gradient(90deg,#20a0ff,#20b8ff)
+}
+.comment-count-approved {
+    color: #fff;
+    background:-webkit-gradient(linear,left top,right top,from(#20a0ff),to(#20b8ff));
+	background:-webkit-linear-gradient(left,#20a0ff,#20b8ff);
+	background:linear-gradient(90deg,#20a0ff,#20b8ff)
+}
+.post-com-count.post-com-count-approved::after {
+    border-top: 5px solid #20a2ff;
+}
+.button.media-button.select-mode-toggle-button {
+    color: #fff;
+    background:-webkit-gradient(linear,left top,right top,from(#20a0ff),to(#20b8ff));
+	background:-webkit-linear-gradient(left,#20a0ff,#20b8ff);
+	background:linear-gradient(90deg,#20a0ff,#20b8ff)
+}
+#activity-widget #the-comment-list .comment-item {
+    background: #fff;
+}
+.activity-block .subsubsub li {
+    color: #fff;
+}
+
+.return {
+    text-decoration: none;
+    color: #20a4ff;
+    font-weight: 700
+}
+.button.cancel.alignleft {
+    color: #fff;
+    background:-webkit-gradient(linear,left top,right top,from(#20a0ff),to(#20b8ff));
+	background:-webkit-linear-gradient(left,#20a0ff,#20b8ff);
+	background:linear-gradient(90deg,#20a0ff,#20b8ff)
 }
