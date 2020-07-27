@@ -4,7 +4,7 @@ Plugin Name: Yolen Admin Theme
 Plugin URI: https://yolen.cn
 Description: 仪表板主题，几乎不影响响应速度。
 Author: Yolen
-Version: 2.0
+Version: 2.1
 Author URI: https://yolen.cn
 */
 
