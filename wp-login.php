@@ -195,11 +195,9 @@ function login_header( $title = 'Log In', $message = '', $wp_error = null ) {
 	 */
 	do_action( 'login_header' );
 	?>
-	
 	<div class="bg"></div>
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
-	
 	<div class="gradient-border" id="login">
 		<h1><a href="<?php echo esc_url( $login_header_url ); ?>"><?php echo $login_header_text; ?></a></h1>
 	<?php
@@ -1083,7 +1081,9 @@ switch ( $action ) {
 		 */
 		do_action( 'login_form' );
 		?>
-	<p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever" <?php checked( $rememberme ); ?> /> <?php esc_html_e( '记住我' ); ?></label></p>
+	<p class="forgetmenot">
+	    <label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" class="chk_1" value="forever" <?php checked( $rememberme ); ?> /> <?php esc_html_e( '记住我' ); ?></label>
+	    </p>
 	<p class="submit">
 		<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="<?php esc_attr_e( '登陆' ); ?>" />
 		<?php	if ( $interim_login ) { ?>
